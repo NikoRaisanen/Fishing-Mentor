@@ -1,1 +1,0 @@
-console.log('Created index.js file')
