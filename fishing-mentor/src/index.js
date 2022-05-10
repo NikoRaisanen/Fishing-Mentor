@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import TopNav from './components/TopNav'
 import QuizQuestion from './components/QuizQuestion';
-import QuizCard from './components/QuizCard'
+import Quiz from './components/Quiz'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,7 +11,7 @@ root.render(
   <React.StrictMode>
     <TopNav />
     <QuizQuestion question="What species are you targeting?"/>
-    <QuizCard />
+    <Quiz />
   </React.StrictMode>
 );
 
