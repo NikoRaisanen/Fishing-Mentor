@@ -5,16 +5,10 @@ import './QuizCard.css'
 const QuizCard = (props) => {
     return (
         <>
-        <Card bg='info' style={{
-            'background-color': 'gray',
-            'display': 'inline-block',
-            borderRadius: '5px',
-            padding: '15px',
-            margin: '10px'
-        }}>
+        <Card className='quiz-card'>
             <Card.Img variant="top" src={placeholder_img} />
             <Card.Body>
-            <Card.Text>
+            <Card.Text className="quiz-card-text">
                 {props.text}
             </Card.Text>
             </Card.Body>

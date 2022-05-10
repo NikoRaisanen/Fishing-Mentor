@@ -1,3 +1,12 @@
 .quiz-card {
-    border: 50rem;
+    background-color: gray;
+    display: inline-block;
+    padding: 15px;
+    margin: 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.quiz-card-text {
+    text-align: center;
 }

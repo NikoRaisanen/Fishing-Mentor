@@ -1,0 +1,8 @@
+* Add dynamic sizing for displays of different sizes
+* Create logic to start making recommendatons
+* Come up with questions for quizzes
+  * Fly quiz
+  * Bass lure quiz 
+  * Fly gear quiz (What wt rod, length, fishing style, weight of fish)
+* Option to save your results (?)
+  * Could be downloadable file with findngs from quiz + final recommendation
