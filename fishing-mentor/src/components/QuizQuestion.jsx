@@ -1,6 +1,6 @@
 const QuizQuestion = (props) => {
     return (
-        <h1 style={{ 'text-align': 'center' }}>{props.question}</h1>
+        <h1 style={{ 'text-align': 'center', 'marginBottom': '100px', 'marginTop': '150px' }}>{props.question}</h1>
     )
 }
 

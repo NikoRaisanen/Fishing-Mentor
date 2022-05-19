@@ -6,3 +6,28 @@
   * Fly gear quiz (What wt rod, length, fishing style, weight of fish)
 * Option to save your results (?)
   * Could be downloadable file with findngs from quiz + final recommendation
+* Add hamburger menu to right side of TopNav component
+  * Ideas for elements in the menu:
+    - View results for all quizzes (use React state)
+* Add "About" section to TopNav component. Include reasoning behind project, linkedin profile, aboutme, contact info
+
+
+FOCUS ON 1 FUNCTIONAL QUIZ FIRST... Come up with questions and matrix for generating results. Then commission an artist to create the visuals
+
+Create results screen that contains top 3 lures in ranked order
+
+Disclaimer that these are general guidelines, each boy of water is unique
+
+Each lure can have a maximum of 1 point
+
+
+Quiz 1 - Bass lure selection
+* What kind of body of water is it?
+* Is it windy? ( Glidebait )
+* Are you fishing from shore? ( Yes = discourage dropshot, + Swimbait )
+* Is there a lot of vegetation / debris (Yes = consider weedless options)
+* Is it rocky? (Yes = crankbait, jig, chatterbait thing -- check name)
+* Water temp? (Cold = slow presentations: wacky rig, dropshot, jig)
+* Do you sometimes see baitfish scatter near the surface? ( Yes = Topwater )
+* What is your preferred fishing style? ( fast, slow, mix )
+* What is the stage of the bass in your target water? (pre-spawn, spawn, post-spawn, other, IDK)
