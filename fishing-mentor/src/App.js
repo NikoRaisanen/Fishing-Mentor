@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 import './index.css';
 import TopNav from './components/TopNav'
-import QuizSlide from './components/QuizSlide'
 import './App.css';
+import { CardGroup } from 'react-bootstrap';
+import QuizCard from './components/QuizCard'
 
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const handleCardClick = (selectedCard) => {
+    if (currentQuestion >= questions.length - 1) {
+      alert('Quiz over')
+    }
     const nextQuestion = currentQuestion + 1
     setCurrentQuestion(nextQuestion)
+    console.log(currentQuestion)
   }
 
   const questions = [
@@ -60,10 +65,23 @@ function App() {
       ]
     }
   ]
+
+
+
   return (
     <>
     <TopNav />
-    <QuizSlide question={questions[currentQuestion].text} cards={questions[currentQuestion].options}/>
+    
+    <h1 className='questionHeader'>{questions[currentQuestion].text}</h1>
+    <p>Question number {currentQuestion}</p>
+
+    <CardGroup className='cardGroup'>
+    {questions[currentQuestion].options.map((opt) => {
+      return (<QuizCard text={opt} clickAction={handleCardClick}/>)
+    })}
+    </CardGroup>
+  
+    {/* <QuizSlide question={questions[currentQuestion].text} cards={questions[currentQuestion].options}/> */}
     </>
   );
 }
