@@ -4,6 +4,8 @@ import TopNav from './components/TopNav'
 import './App.css';
 import { CardGroup } from 'react-bootstrap';
 import QuizCard from './components/QuizCard'
+import Results from './components/Results'
+import updateResults from './helpers.js'
 
 function App() {
   const lures = {
@@ -16,7 +18,7 @@ function App() {
     'Drop shot': 0,
     'Glidebait': 0,
     'Topwater': 0,
-    'Chatterbait': 0,
+    'Chatterbait': 0
   }
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [quizCompleted, setQuizCompleted] = useState(false)
@@ -29,6 +31,9 @@ function App() {
     }
     // Update lureStatus with appropriate values
     console.log(selectedCard.lurePoints)
+    console.log('Current status:' + JSON.stringify(lureStatus))
+    const r = updateResults(selectedCard.lurePoints, lureStatus)
+    setLureStatus(r)
     // Add lurePoints value to lureStatus state
     // Something like lurePoints.map() to create intermediary var, then save that var with setLureStatus
     // Increment to move on to next question
@@ -90,7 +95,7 @@ function App() {
 
 
   {if (quizCompleted) {
-    return (<h1>Done with Quiz</h1>)
+    return (<Results result={JSON.stringify(lureStatus)}/>)
   } else {
   return (
     <>
