@@ -10,3 +10,16 @@
 .quiz-card-text {
     text-align: center;
 }
+
+/* .quiz-card[wobble='1'] {
+    animation: wobble 1s 1;
+  }
+  
+  @keyframes wobble {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  } */

@@ -46,3 +46,16 @@
 .cardGroup {
   text-align: center;
 }
+
+.cardGroup[wobble='1'] {
+  animation: wobble 3s 1;
+}
+
+@keyframes wobble {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
